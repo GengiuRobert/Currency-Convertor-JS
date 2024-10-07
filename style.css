@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.converter {
+    background-color: aliceblue;
+    width: 55%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 10px;
+    font-size: 2.5em;
+}
+
+label,
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
+button{
+    margin-bottom: 20px;
+    background-color: #3CB371;
+    border-radius: 5px;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: lightgreen;
+}
+
+#amount,#fromCurrency,#toCurrency {
+    padding: 5px;
+    font-size: 1.2em; 
+}
+
+#ammountDiv, #fromCurrencyDiv, #toCurrencyDiv{
+    padding-bottom: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
