@@ -17,9 +17,9 @@ body {
 .converter {
     background-color: aliceblue;
     width: 55%;
-    text-align: center;
     border: 2px solid black;
     border-radius: 30px;
+    padding: 20px; 
     text-align: center;
 }
 
@@ -36,25 +36,50 @@ button {
     font-size: 1.5em;
 }
 
-button{
+button {
     margin-bottom: 20px;
     background-color: #3CB371;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 15px; 
     transition: background-color 0.3s;
+    cursor: pointer; 
 }
 
-button:hover{
+button:hover {
     background-color: lightgreen;
 }
 
-#amount,#fromCurrency,#toCurrency {
-    padding: 5px;
-    font-size: 1.2em; 
+#amount,
+#fromCurrency,
+#toCurrency {
+    padding: 10px; 
+    font-size: 1.2em;
+    width: 100%; 
+    max-width: 300px; 
+    border-radius: 5px;
+    border: 1px solid #ccc; 
 }
 
-#ammountDiv, #fromCurrencyDiv, #toCurrencyDiv{
+#ammountDiv,
+#fromCurrencyDiv,
+#toCurrencyDiv {
     padding-bottom: 30px;
     text-align: center;
     vertical-align: middle;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .converter {
+        width: 90%; 
+    }
+
+    h1,
+    h2 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1.2em; 
+    }
 }
